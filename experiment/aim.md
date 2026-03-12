@@ -1,1 +1,1 @@
-### Aim of the experiment
+To understand quantum measurement postulates and simulate output analysis
