@@ -1,3 +1,10 @@
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -9,15 +16,15 @@ $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
 $$
 
-where $$\alpha$$ and $$\beta$$ are complex amplitudes with the normalization condition:
+where $\alpha$ and $\beta$ are complex amplitudes with the normalization condition:
 
 $$
 |\alpha|^2 + |\beta|^2 = 1
 $$
 
-- $$|0\rangle \text{ and } |1\rangle$$: Basis states (computational basis)
-- $$|\alpha|^2$$: Probability of measuring state $$|0\rangle$$
-- $$|\beta|^2$$: Probability of measuring state $$|1\rangle$$
+- $|0\rangle \text{ and } |1\rangle$: Basis states (computational basis)
+- $|\alpha|^2$: Probability of measuring state $|0\rangle$
+- $|\beta|^2$: Probability of measuring state $|1\rangle$
 
 
 
@@ -86,7 +93,7 @@ When a measurement is performed:
 
 ##### Probability Distribution
 
-The probability of measuring state $$|k\rangle$$ is given by:
+The probability of measuring state $|k\rangle$ is given by:
 
 $$
 P(k) = |\langle k|\psi\rangle|^2
@@ -96,7 +103,7 @@ $$
 
 ##### Expected Value (Expectation)
 
-For a quantum observable $$O$$:
+For a quantum observable $O$:
 
 $$
 \langle O \rangle = \langle \psi|O|\psi \rangle
