@@ -1,10 +1,21 @@
 <script>
   MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
+    chtml: { displayAlign: 'left', displayIndent: '0' },
+    svg: { displayAlign: 'left', displayIndent: '0' },
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
   };
 </script>
+<style>
+  mjx-container[display="true"], 
+  .katex-display,
+  .katex-display > .katex,
+  .katex-display .katex {
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    display: block !important;
+  }
+</style>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
