@@ -1,4 +1,5 @@
-
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 #### Step 1: Introduction 
 
@@ -10,7 +11,11 @@ Read the introduction and click start simulation button to start the Quantum Mea
 
 #### Step 2: Prepare and Choose the Quantum State
 
-Select and prepare the quantum state to be measured (e.g., |0⟩, superposition state).
+Select and prepare the quantum state to be measured (for example, the basis state shown below or a superposition state).
+
+$$
+|0\rangle
+$$
 
 ![Step 2](./images/qc42.png)
 
@@ -20,8 +25,18 @@ Select and prepare the quantum state to be measured (e.g., |0⟩, superposition 
 
 Select the measurement basis:
 
-- Computational (Z) Basis: {|0⟩, |1⟩}
-- Hadamard (X) Basis: {|+⟩, |-⟩}
+- Computational (Z) Basis
+
+$$
+\{|0\rangle,\ |1\rangle\}
+$$
+
+- Hadamard (X) Basis
+
+$$
+\{|+\rangle,\ |-\rangle\}
+$$
+
 - Apply basis rotation if needed
 
 ![Step 3](./images/qc43.png)
@@ -30,10 +45,9 @@ Select the measurement basis:
 
 #### Step 4: Run Quantum Shots
 
-Execute the quantum circuit multiple times (100-10,000 shots) and collect measurement outcomes.
+Execute the quantum circuit multiple times (100–10,000 shots) and collect measurement outcomes.
 
 ![Step 4](./images/qc44.png)
-
 
 
 
