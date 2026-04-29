@@ -78,7 +78,59 @@ $$
 
 - **Y Basis**: Related to phase information  
 
+#### Mixed States
 
+So far, we have described quantum systems using **pure states**, where the system is in a well-defined quantum state vector $|\psi\rangle$.
+
+However, in many practical scenarios, a system may not be in a single pure state but rather in a **statistical mixture of different states**. Such systems are described using a **density matrix** $\rho$.
+
+A mixed state is written as:
+
+$$
+\rho = \sum_i p_i |\psi_i\rangle \langle \psi_i|
+$$
+
+where:
+- $p_i$ are classical probabilities ($\sum p_i = 1$)
+- $|\psi_i\rangle$ are quantum states
+
+Measurement probabilities are then computed as:
+
+$$
+P(k) = \text{Tr}(\rho \, |k\rangle \langle k|)
+$$
+
+Mixed states arise due to:
+- Noise in quantum systems  
+- Lack of complete information  
+- Interaction with environment  
+
+This provides a more general framework than pure state representation.
+#### Generalized Measurement (POVM)
+
+The measurement described earlier assumes **projective measurements**, where outcomes correspond directly to orthogonal basis states.
+
+A more general framework is given by **Positive Operator-Valued Measures (POVMs)**.
+
+A POVM consists of a set of measurement operators $\{E_i\}$ such that:
+
+$$
+E_i \geq 0, \quad \sum_i E_i = I
+$$
+
+The probability of obtaining outcome $i$ is:
+
+$$
+P(i) = \text{Tr}(\rho E_i)
+$$
+
+Key differences from projective measurement:
+
+- POVMs are more general and flexible  
+- They can describe noisy or partial measurements  
+- They are widely used in quantum information and experiments  
+
+Projective measurement is a **special case** of POVM.
 
 #### Superposition
 
